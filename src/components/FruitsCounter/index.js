@@ -19,9 +19,9 @@ class FruitsCounter extends Component {
       <div className="background-container">
         <div className="inner-background-container">
           <h1>
-            Bob ate <span className="count-of-fruits"> {mangosCount} </span>
-            Mangos and
-            <span className="count-of-fruits"> {bananasCount} </span>Bananas
+            Bob ate<span className="count-of-fruits"> {mangosCount} </span>
+            mangoes
+            <span className="count-of-fruits"> {bananasCount} </span>bananas
           </h1>
           <div className="images-container">
             <img
