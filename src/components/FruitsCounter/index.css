@@ -1,0 +1,27 @@
+/* Write your CSS here */
+.background-container {
+  background-color: #ffd569;
+  height: 100vh;
+  padding: 100px;
+}
+.inner-background-container {
+  background-color: #ffffff;
+  min-height: 60vh;
+  width: auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.count-of-fruits {
+  color: #ffd569;
+}
+.images-container {
+  display: flex;
+  justify-content: center;
+}
+.image-sizing {
+  height: 300px;
+  width: 300px;
+}
