@@ -3,13 +3,25 @@ import {Component} from 'react'
 import './index.css'
 
 class FruitsCounter extends Component {
+  state = {mangosCount: 0, bananasCount: 0}
+
+  increaseMangosCount = () => {
+    this.setState(pervState => ({mangosCount: pervState.mangosCount + 1}))
+  }
+
+  increaseBananasCount = () => {
+    this.setState(pervState => ({bananasCount: pervState.bananasCount + 1}))
+  }
+
   render() {
+    const {mangosCount, bananasCount} = this.state
     return (
       <div className="background-container">
         <div className="inner-background-container">
           <h1>
-            Bob ate <span className="count-of-fruits"> 0 </span>Mangos and
-            <span className="count-of-fruits"> 0 </span>Bananas
+            Bob ate <span className="count-of-fruits"> {mangosCount} </span>
+            Mangos and
+            <span className="count-of-fruits"> {bananasCount} </span>Bananas
           </h1>
           <div className="images-container">
             <img
@@ -24,10 +36,18 @@ class FruitsCounter extends Component {
             />
           </div>
           <div className="button-container">
-            <button type="button" className="style-button">
+            <button
+              type="button"
+              className="style-button"
+              onClick={this.increaseMangosCount}
+            >
               Eat Mango
             </button>
-            <button type="button" className="style-button">
+            <button
+              type="button"
+              className="style-button"
+              onClick={this.increaseBananasCount}
+            >
               Eat Banana
             </button>
           </div>
