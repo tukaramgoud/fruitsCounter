@@ -25,3 +25,16 @@
   height: 300px;
   width: 300px;
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.style-button {
+  background-color: #007bff;
+  color: white;
+  font-family: Roboto;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}

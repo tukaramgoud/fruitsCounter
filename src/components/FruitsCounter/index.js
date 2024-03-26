@@ -23,6 +23,14 @@ class FruitsCounter extends Component {
               className="image-sizing"
             />
           </div>
+          <div className="button-container">
+            <button type="button" className="style-button">
+              Eat Mango
+            </button>
+            <button type="button" className="style-button">
+              Eat Banana
+            </button>
+          </div>
         </div>
       </div>
     )
